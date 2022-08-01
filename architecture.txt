@@ -1,0 +1,22 @@
+The user opens the app
+The app opens and the user image is clicked.
+The face is detected and the mood is classified.
+
+Generate the Playlist:
+The first task here is to generate the playlist
+To do that first an random song is thrown to user. A certain threshold (in secs) is decided. If the user listens to the first song more than the threshold then 20 similar songs would be taken and a playlist would be generated. If the user skips the song before he reaches to the threshold point then the new random song is given and the same process is repeated untill we have a playlist. 
+
+Alteration of Playlist based on Moods
+Now the playlist is generated and user is enjoying the music. But suddenly the user skips the song. Now here there could be two reasons to skip the song: First one could be that he doesnt wants to listen to this song (either dislikes it or maybe simply he is just not in the mood) or the second potential reason could be that his mood has changed now and an alteration in the playlist is required now. 
+For that what we can do that is as soon as he skips the song in the app a picture is clicked. Immedieatley mood is again identitfied. If the mood (which is just identified) matches the previous mood than we can conclude that its not the mood that has changed its the song which the user doesnt likes and then that song could be removed from the playlist. But if the new mood detected is different from the previous mood than we need to alter the playlist again but in slighlty different manner. This time we would add any random song of the new classified mood in the playlist and it would be given to the user (Note: This new song would be recommended as the just next song after the user skips the previous song). Again we will check for the threshold and if the threshold is cleared than 60%-70% songs of the current playlist can be replaced by the songs similar to the randomly selected one. 
+
+Analysis at the EOD
+Now the day is over and its midnight, user is sleeping. Few analysis can be done now:
+- Calculate the average time (in secs) of muisc listening it took to change the users mood
+- For a particular mood what artist music was heard the most
+- For a particular mood the average time user listens to a song 
+- At what time (in a day) user has what mood
+
+Features of APP:
+User can save the playlist anytime for future.
+User can create a new playlist anytime. 
